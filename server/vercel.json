@@ -8,19 +8,8 @@
   ],
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "index.js"
-    },
-    {
-      "src": "/old-path",
-      "status": 301,
-      "headers": {
-        "Location": "/new-path"
-      }
+      "src": "/(.*)",
+      "dest": "/index.js"
     }
-  ],
-  "env": {
-    "NODE_ENV": "production",
-    "API_KEY": "@api_key"
-  }
-}
+]}
+   
