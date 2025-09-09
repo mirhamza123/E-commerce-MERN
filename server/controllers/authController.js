@@ -1,3 +1,4 @@
+const { useActionState } = require('react');
 const User = require('../models/user');
 const jwt = require('jsonwebtoken');
 
@@ -42,3 +43,10 @@ exports.login = async (req, res) => {
     res.status(500).json({ success: false, message: 'Server error' });
   }
 };
+  
+exports.home= async (req, res)=>{
+  res.send({
+    activeStatus:true,
+    error:false
+  })
+}
