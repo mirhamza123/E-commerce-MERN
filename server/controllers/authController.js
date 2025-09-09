@@ -44,9 +44,3 @@ exports.login = async (req, res) => {
   }
 };
   
-exports.home= async (req, res)=>{
-  res.send({
-    activeStatus:true,
-    error:false
-  })
-}
